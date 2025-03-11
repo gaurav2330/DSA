@@ -16,5 +16,5 @@ console.log(moveZerosToEnd(arr))
 arr = [0, 0, 0, 10, 0]
 console.log(moveZerosToEnd(arr))
 
-arr = [10, 20]
+arr = [10, 20];
 console.log(moveZerosToEnd(arr))
