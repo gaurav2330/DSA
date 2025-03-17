@@ -1,8 +1,10 @@
+'use strict';
+
 const binarySearch = (arr, x) => {
   let start = 0, end = arr.length - 1;
 
   while (start <= end) {
-    mid = Math.floor((start + end)/2)
+    let mid = Math.floor((start + end)/2)
     if (arr[mid] > x) {
       end = mid - 1;
     }
