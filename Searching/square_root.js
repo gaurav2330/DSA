@@ -1,17 +1,13 @@
 const squareRoot = (x) => {
   if (x == 1) return 1;
 
-  let start = 0, end = x;
+  let start = 0, end = x, ans = -1;
   while (start < end) {
     let mid = Math.floor((start + end)/ 2)
 
     if (mid * mid < x) {
-      if ((mid+1) * (mid+1) > x) {
-        return mid;
-      }
-      else {
-        start = mid + 1;
-      }
+      start = mid + 1;
+      ans = mid;
     }
     else if (mid * mid == x) {
       return mid;
@@ -20,6 +16,7 @@ const squareRoot = (x) => {
       end = mid - 1;
     }
   }
+  return ans;
 }
 
 console.log(squareRoot(4))
