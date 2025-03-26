@@ -28,14 +28,6 @@ function setMatrixZero (arr) {
 
 // *********************************************************************************************************************
 
-// Optimal approach
-
-function setMatrixZero (arr) {
-  return arr;
-}
-
-// *********************************************************************************************************************
-
 testSetMatrixZeros(setMatrixZero)
 
 function testSetMatrixZeros(fn) {
